@@ -31,7 +31,6 @@ httpRequest = function(host,method,endpoint,params){
         }else{
             options.headers.auth_token = auth_token;
         }
-        console.log(options);
         var req = http.request(options,function(response){
             var data = '';
             response.on('data',function(chunk){
